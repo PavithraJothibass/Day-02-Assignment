@@ -1,22 +1,27 @@
-1.	Write a blog on difference between HTTP 1.1 vs HTTP 2.
-HTTP/1.1	HTTP/2
-It works on the textual format.	It works on the binary protocol.
-There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources.	It allows multiplexing so one TCP connection is required for multiple requests.
-It uses requests resource Inlining for use getting multiple pages	It uses PUSH frame by server that collects all multiple pages 
-It compresses data by itself.	It uses HPACK for data compression.
+# Understanding the Document and Window Objects in JavaScript
 
-2.	Write a blog about object and its internal representation in Javascript.
-Objects:
-•	Objects are important data types in javascript. Objects are different than primitive datatypes.
-•	Objects are more complex and each object may contain any combination of these primitive data-types.
-Internal representation of objects:
-•	Internally, javascript engines use various data structures to represent objects efficiently. 
-•	One common approach  is using a hash table or a similar structure to store the objects properties and their corresponding values.
-•	This allows for fast access and manipulation of properties.
+## Overview
 
-Internal representation:
-{
-name: “Pavithra J”
-age: 22,
-email: “pavithrajothi2002@gmail.com
-}
+This project aims to clarify the differences between the `document` and `window` objects in JavaScript, essential components of the browser environment that play crucial roles in web development.
+
+## Key Concepts
+
+1. **Window Object**:
+   - Represents the browser window.
+   - Serves as the global context for JavaScript execution.
+   - Manages browser features (e.g., `window.alert()`, `window.location`).
+
+2. **Document Object**:
+   - Represents the content of the web page.
+   - Acts as the entry point to the DOM (Document Object Model).
+   - Allows manipulation of HTML elements (e.g., `document.getElementById()`).
+
+## Relationship
+- The `document` object is a property of the `window` object, allowing interaction with the web page's content within the browser environment.
+
+## Resources for Further Reading
+- [MDN Web Docs - Window](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+- [MDN Web Docs - Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+
+## Author
+Pavithra Jothibass
